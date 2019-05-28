@@ -3,17 +3,57 @@
 
   {%- include head.html -%}
 
-  <body>
-
+  <body id="body" class="up-scroll">
+    <!-- PRELOADER -->
+    <div id="preloader" class="smooth-loader-wrapper">
+      <div class="smooth-loader">
+        <div class="loader">
+          <span class="dot dot-1"></span>
+          <span class="dot dot-2"></span>
+          <span class="dot dot-3"></span>
+          <span class="dot dot-4"></span>
+        </div>
+      </div>
+    </div>
+    <!-- /PRELOADER -->
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+    {{ content }}
 
     {%- include footer.html -%}
+
+  <!--scrolling-->
+  <div class="scrolling">
+    <a href="#pageTop" class="back-to-top" id="back-to-top" style="opacity: 1;">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <!-- Javascript -->
+  <script src="/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="/assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="/assets/plugins/isotope/isotope.min.js"></script>
+  <script src="/assets/plugins/smoothscroll/SmoothScroll.js"></script>
+  <script src="/assets/plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="/assets/plugins/no-ui-slider/nouislider.min.js"></script>
+  <script src="/assets/plugins/lazyestload/lazyestload.js"></script>
+  <script src="/assets/plugins/velocity/velocity.min.js"></script> 
+  {% if layout.revslider %}
+  <script src="/assets/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script src="/assets/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+  <script src="/assets/js/revslider.js"></script>
+  {% endif %}
+  {% if jekyll.environment == 'development' and layout.revslider %}
+  <!-- Load revolution slider in non-production environment -->
+  <script src="/assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script src="/assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script src="/assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script> 
+  {% endif %}
+  <script src="/assets/plugins/wow/wow.min.js"></script>
+  <script src="/assets/js/trs.js"></script>
 
   </body>
 

@@ -1,35 +1,101 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+<!-- ====================================
+      ———	FOOTER
+      ===================================== -->
+<footer class="footer-bg-img">
+  <!-- Footer Color Bar -->
+  <div class="color-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col color-bar bg-warning"></div>
+        <div class="col color-bar bg-danger"></div>
+        <div class="col color-bar bg-success"></div>
+        <div class="col color-bar bg-info"></div>
+        <div class="col color-bar bg-purple"></div>
+        <div class="col color-bar bg-pink"></div>
+        <div class="col color-bar bg-warning d-none d-md-block"></div>
+        <div class="col color-bar bg-danger d-none d-md-block"></div>
+        <div class="col color-bar bg-success d-none d-md-block"></div>
+        <div class="col color-bar bg-info d-none d-md-block"></div>
+        <div class="col color-bar bg-purple d-none d-md-block"></div>
+        <div class="col color-bar bg-pink d-none d-md-block"></div>
       </div>
     </div>
-
   </div>
 
+  <div class="pt-8 pb-7  bg-repeat" style="background-image: url(/assets/img/background/footer-bg-img-1.png);">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+          <a class="mb-6 d-block" href="index.html">
+            <img class="img-fluid d-inline-block w-50 lazyestload" data-src="/assets/img/trauma-recovery-services-logo.jpg" src="/assets/img/trauma-recovery-services-logo.jpg">
+          </a>
+          <p class="mb-6">We provide counseling and assessment to improve the mental health, functioning and well-being of children and adolescents, as well as their families and communities.</p>
+        </div>
+
+        <div class="col-sm-6 col-lg-6 col-xs-12">
+          <h4 class="section-title-sm font-weight-bold text-white mb-6">Trauma Recovery Services</h4>
+          <ul class="list-unstyled">
+            <li class="mb-4">
+              <a href="/about/mission.html">
+                <i class="fa fa-angle-double-right mr-2" aria-hidden="true"></i>Mission
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="/therapy/">
+                <i class="fa fa-angle-double-right mr-2" aria-hidden="true"></i>Therapy Options
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="/mental-health-complex-trauma-assessments.html">
+                <i class="fa fa-angle-double-right mr-2" aria-hidden="true"></i>Assessments
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="/about/team/">
+                <i class="fa fa-angle-double-right mr-2" aria-hidden="true"></i>Licensed Therapists
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="/contact/">
+                <i class="fa fa-angle-double-right mr-2" aria-hidden="true"></i>
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Copy Right -->
+  <div class="copyright">
+    <div class="container">
+      <div class="row py-4 align-items-center">
+        <div class="col-sm-7 col-xs-12 order-1 order-md-0">
+          <p class="copyright-text"> &copy; Copyright Trauma Recovery Services</p>
+        </div>
+
+        <div class="col-sm-5 col-xs-12">
+          <ul class="list-inline d-flex align-items-center justify-content-md-end justify-content-center mb-md-0">
+            <li class="mr-3">
+              <a class="icon-rounded-circle-small bg-warning" href="javascript:void(0)">
+                <i class="fa fa-facebook text-white" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="mr-3">
+              <a class="icon-rounded-circle-small bg-success" href="javascript:void(0)">
+                <i class="fa fa-twitter text-white" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="mr-3">
+              <a class="icon-rounded-circle-small bg-danger" href="javascript:void(0)">
+                <i class="fa fa-instagram text-white" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

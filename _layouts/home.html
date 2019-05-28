@@ -1,34 +1,513 @@
 ---
 layout: default
+title: TRS Home Page
+description: TRS Home Page Description
+revslider: enabled
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<div class="main-wrapper home">
 
-  {{ content }}
+<!--====================================
+——— BEGIN MAIN SLIDE LIST
+===================================== -->
+<section class="rev_slider_wrapper fullwidthbanner-container over" dir="ltr">
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+  <!-- the ID here will be used in the JavaScript below to initialize the slider -->
+  <div id="rev_slider_1" class="rev_slider rev-slider-kidz-school" data-version="5.4.5" style="display:none">
+
+		<ul>
+			<!-- SLIDE 1  -->
+			<li data-transition="fade">
+				<img src="/assets/img/banner/slider-1/img-1.jpg" alt="Trauma Recovery Services" class="rev-slidebg">
+				<!-- LAYERS -->
+
+				<!-- LAYER NR. 1 -->
+				<div class="tp-caption tp-resizeme slide-layer-1 font-dosis font-weight-bold"
+					data-frames='[{"delay":1000,"speed":800,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+					{"delay":"wait","speed":0,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					data-visibility="on"
+					data-x="left"
+			    data-y="middle"
+			    data-hoffset="['10', '40', '15', '30']"
+			    data-voffset="['-80', '-60', '-50', '-40']"
+					data-fontsize="['50', '45', '40', '39']"
+    			data-lineheight="['50', '45', '40', '39']"
+					data-color="#FFF"
+					data-width="auto"
+					data-basealign="grid"
+          data-responsive_offset="off"
+          data-type="text">
+					Trauma Recovery Services
+				</div>
+
+				<!-- LAYER NR. 2 -->
+				<div class="tp-caption tp-resizeme slide-layer-2 font-dosis"
+				data-frames='[{"delay":1500,"speed":1000,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+				{"delay":"wait","speed":0,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					data-visibility="on"
+					data-x="left"
+			    data-y="middle"
+			    data-hoffset="['10', '40', '15', '30']"
+			    data-voffset="['0', '0', '0', '0']"
+					data-width="['700','700','700','420']"
+					data-fontsize="['23', '23', '20', '20']"
+    			data-lineheight="['23', '23', '20', '20']"
+					data-color="#FFF"
+					data-textAlign="left"
+					data-basealign="grid"
+          data-responsive_offset="off"
+          data-type="text"
+          data-whitespace="normal">
+					Here you can have a catchy tag line to display above-the-fold.
+				</div>
+			</li>
+
+			<!-- SLIDE 2  -->
+			<li data-transition="fade">
+				<img src="/assets/img/banner/slider-1/img-1.jpg" alt="Trauma Recovery Services" class="rev-slidebg">
+				<!-- LAYERS-->
+
+				<!-- LAYER NR. 1 -->
+				<div class="tp-caption tp-resizeme font-dosis font-weight-bold"
+					data-frames='[{"delay":1000,"speed":800,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+					{"delay":"wait","speed":0,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					data-visibility="on"
+					data-x="center"
+			    data-y="middle"
+					data-hoffset="0"
+			    data-voffset="['-80', '-60', '-50', '-40']"
+					data-fontsize="['50', '45', '40', '39']"
+    			data-lineheight="['50', '45', '40', '39']"
+					data-color="#FFF"
+					data-textAlign="center"
+					data-basealign="grid"
+          data-responsive_offset="off" >
+					Trauma Recovery Services
+				</div>
+
+				<!-- LAYER NR. 2 -->
+				<div class="tp-caption tp-resizeme slide-layer-2 font-dosis"
+				data-frames='[{"delay":1500,"speed":1000,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+				{"delay":"wait","speed":0,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					data-visibility="on"
+					data-x="center"
+			    data-y="middle"
+					data-hoffset="0"
+			    data-voffset="0"
+					data-fontsize="['23', '23', '20', '20']"
+    			data-lineheight="['23', '23', '20', '20']"
+          data-width="['550','721','721','420']"
+					data-color="#FFF"
+					data-textAlign="center"
+					data-basealign="grid"
+          data-responsive_offset="off"
+          data-whitespace="normal">
+					Here you can have a catchy tag line to display above-the-fold.
+				</div>
+
+			</li>
+
+			<!-- SLIDE 3 -->
+			<li data-transition="fade">
+				<img src="/assets/img/banner/slider-1/img-1.jpg" alt="Trauma Recovery Services" class="rev-slidebg">
+				<!-- LAYERS -->
+
+				<!-- LAYER NR. 1 -->
+				<div class="tp-caption tp-resizeme font-dosis font-weight-bold"
+					data-frames='[{"delay":1000,"speed":800,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+					{"delay":"wait","speed":0,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					data-visibility="on"
+					data-x="right"
+			    data-y="middle"
+					data-hoffset="['10', '40', '15', '30']"
+			    data-voffset="['-80', '-60', '-50', '-40']"
+					data-fontsize="['50', '45', '40', '39']"
+    			data-lineheight="['50', '45', '40', '39']"
+					data-color="#FFF"
+					data-textAlign="right"
+					data-basealign="grid"
+          data-responsive_offset="off"
+          data-type="text">
+					Trauma Recovery Services
+				</div>
+
+				<!-- LAYER NR. 2 -->
+				<div class="tp-caption tp-resizeme slide-layer-2 font-dosis"
+				data-frames='[{"delay":1500,"speed":1000,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+				{"delay":"wait","speed":0,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+					data-visibility="on"
+					data-x="right"
+			    data-y="middle"
+					data-hoffset="['10', '40', '15', '30']"
+			    data-voffset="0"
+					data-fontsize="['23', '23', '20', '20']"
+    			data-lineheight="['23', '23', '20', '20']"
+          data-width="['700','721','721','420']"
+					data-color="#FFF"
+					data-textAlign="right"
+					data-basealign="grid"
+          data-responsive_offset="off"
+          data-type="text"
+          data-whitespace="normal">
+          Here you can have a catchy tag line to display above-the-fold.
+				</div>
+			</li>
+
+
+		</ul>
+  </div>
+</section>
+
+<!-- ====================================
+———	BOX SECTION
+===================================== -->
+<section class="d-none d-sm-block mtn-50">
+  <div class="container">
+    <div class="row wow fadeInUp">
+      <div class="col-sm-4">
+				<a href="#courses">
+					<div class="card bg-danger card-hover scrolling">
+						<div class="card-body text-center p-0">
+							<div class="card-icon-border-large border-danger">
+								<i class="fa fa-file-text-o" aria-hidden="true"></i>
+							</div>
+							<h2 class="text-white font-size-32 pt-5 pb-6 mb-0 font-dosis">Therapy</h2>
+							<a href="#courses" class="btn-scroll-down d-block pb-5">
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</a>
+      </div>
+
+      <div class="col-sm-4">
+				<a href="/mental-health-complex-trauma-assessments.html">
+					<div class="card bg-success card-hover scrolling">
+						<div class="card-body text-center p-0">
+							<div class="card-icon-border-large border-success">
+								<i class="fa fa-calendar-o" aria-hidden="true"></i>
+							</div>
+							<h2 class="text-white font-size-32 pt-5 pb-6 mb-0 font-dosis">Assess</h2>
+							<a href="#gallery" class="btn-scroll-down d-block pb-5">
+								<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</a>
+      </div>
+
+      <div class="col-sm-4">
+				<a href="#teachers">
+					<div class="card bg-info card-hover scrolling">
+						<div class="card-body text-center p-0">
+							<div class="card-icon-border-large border-info">
+								<i class="fa fa-picture-o" aria-hidden="true"></i>
+							</div>
+							<h2 class="text-white font-size-32 pt-5 pb-6 mb-0 font-dosis">Meet Us</h2>
+              <a href="#teachers" class="btn-scroll-down d-block pb-5">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+						</div>
+					</div>
+				</a>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+<!-- ====================================
+———	HOME FEATURE
+===================================== -->
+<section class="pt-9 pb-6 py-md-7">
+  <div class="container">
+    <div class="section-title justify-content-center mb-4 mb-md-8 wow fadeInUp">
+      <span class="shape shape-left bg-info"></span>
+      <h2 class="text-danger">Our Features</h2>
+      <span class="shape shape-right bg-info"></span>
+    </div>
+
+    <div class="row wow fadeInUp">
+			<!-- Media -->
+      <div class="col-sm-6 col-xl-4 col-xs-12">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-warning mr-xl-4">
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+					</div>
+
+          <div class="media-body">
+            <h3 class="text-warning">Experienced Teachers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-sm-6 col-xl-4 col-xs-12">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-success mr-xl-4">
+						<i class="fa fa-leaf" aria-hidden="true"></i>
+					</div>
+
+          <div class="media-body">
+            <h3 class="text-success">Physical Activity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-sm-6 col-xl-4 col-xs-12">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-danger mr-xl-4">
+						<i class="fa fa-car" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-danger">Transportation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-sm-6 col-lg-4 col-xs-12">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-info mr-xl-4">
+						<i class="fa fa-cutlery" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-info">Delicious Food</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-sm-6 col-xl-4 col-xs-12">
+        <div class="media mb-6">
+					<div class="media-icon-large bg-purple mr-xl-4">
+						<i class="fa fa-heart" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-purple">Love & Care</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+
+			<!-- Media -->
+      <div class="col-sm-6 col-xl-4 col-xs-12">
+        <div class="media mb-7">
+					<div class="media-icon-large bg-pink mr-xl-4">
+						<i class="fa fa-shield" aria-hidden="true"></i>
+					</div>
+          <div class="media-body">
+            <h3 class="text-pink">Annual Sports</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================
+———	CALL TO ACTION
+===================================== -->
+<section class="py-9 bg-parallax" style="background-image: url(/assets/img/background/background-img-1.jpg);">
+	<div class="container">
+    <div class="wow fadeInUp">
+      <div class="section-title justify-content-center">
+        <h2 class="text-white text-center">Need More Information?</h2>
+      </div>
+      <div class="text-center">
+        <a href="/contact/" class="btn btn-danger shadow-sm text-uppercase mt-4">
+          <i class="fa fa-phone mr-2" aria-hidden="true"></i>Contact
+        </a>
+      </div>
+    </div>
+	</div>
+</section>
+
+<!-- ====================================
+———	THERAPY SECTION
+===================================== -->
+<section class="py-9" id="courses">
+  <div class="container">
+    <div class="section-title justify-content-center mb-4 mb-md-8 wow fadeInUp">
+      <span class="shape shape-left bg-info"></span>
+      <h2 class="text-danger">Therapy</h2>
+      <span class="shape shape-right bg-info"></span>
+    </div>
+
+    <div class="row wow fadeInUp">
+      <div class="col-sm-6 col-lg-3 col-xs-12">
+        <div class="card">
+          <a href="/therapy/individual/" class="position-relative">
+            <img class="card-img-top lazyestload" data-src="/assets/img/therapy/little-girl.jpg" src="/assets/img/therapy/little-girl.jpg" alt="Individual Therapy">
           </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+          <div class="card-body border-top-5 px-3 border-warning">
+            <h3 class="card-title">
+              <a class="text-warning text-capitalize d-block text-truncate" href="/therapy/individual/">Individual Therapy</a>
+            </h3>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1">
+                <i class="fa fa-calendar-o mr-2" aria-hidden="true"></i>Ages: 4 to 21 years
+              </li>
+            </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+            <p>Our licensed therapists provide evidenced-based therapy to children and adolescents, including special needs and at-risk youth.</p>
+            <div class="d-block">
+              <a href="/therapy/individual/" class="btn btn-link text-hover-warning pl-2 pl-lg-0">
+                <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Individual Therapy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</div>
+			<!-- Card -->
+      <div class="col-sm-6 col-lg-3 col-xs-12">
+        <div class="card">
+          <a href="/therapy/family/" class="position-relative">
+            <img class="card-img-top lazyestload" data-src="/assets/img/therapy/family-therapy.jpg" src="/assets/img/therapy/family-therapy.jpg" alt="Family Therapy">
+          </a>
+          <div class="card-body border-top-5 px-3 border-success">
+            <h3 class="card-title">
+              <a class="text-success text-capitalize d-block text-truncate" href="/therapy/family/">Family Therapy</a>
+            </h3>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1">
+                <i class="fa fa-calendar-o mr-2" aria-hidden="true"></i>Ages: 4 to 21 years
+              </li>
+            </ul>
+            <p>Our licensed therapists provide family therapy and/or parent training to children, adolescents and their families.</p>
+            <div class="d-block">
+              <a href="/therapy/family/" class="btn btn-link text-hover-success pl-2 pl-lg-0">
+                <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Family Therapy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<!-- Card -->
+      <div class="col-sm-6 col-lg-3 col-xs-12">
+        <div class="card">
+          <a href="/therapy/sibling/" class="position-relative">
+            <img class="card-img-top lazyestload" data-src="/assets/img/therapy/siblings.jpg" src="/assets/img/therapy/siblings.jpg" alt="Sibling Therapy">
+          </a>
+          <div class="card-body border-top-5 px-3 border-danger">
+            <h3 class="card-title">
+              <a class="text-danger text-capitalize d-block text-truncate" href="/therapy/sibling/">Sibling Therapy</a>
+            </h3>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1">
+                <i class="fa fa-calendar-o mr-2" aria-hidden="true"></i>Ages: 4 to 21 years
+              </li>
+            </ul>
+            <p>Our licensed therapists can help brothers and sisters learn to work together and deal with difficulties and challenges.</p>
+            <div class="d-block">
+              <a href="/therapy/sibling/" class="btn btn-link text-hover-danger pl-2 pl-lg-0">
+                <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Sibling Therapy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<!-- Card -->
+      <div class="col-sm-6 col-lg-3 col-xs-12">
+        <div class="card">
+          <a href="/therapy/group/" class="position-relative">
+            <img class="card-img-top lazyestload" data-src="/assets/img/therapy/group-therapy.jpg" src="/assets/img/therapy/group-therapy.jpg" alt="Group Therapy">
+          </a>
+          <div class="card-body border-top-5 px-3 border-info">
+            <h3 class="card-title">
+              <a class="text-info text-capitalize d-block text-truncate" href="/therapy/group/">Group Therapy</a>
+            </h3>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-1">
+                <i class="fa fa-calendar-o mr-2" aria-hidden="true"></i>Ages: 4 to 21 years
+              </li>
+            </ul>
+            <p>When we have three or more children or adolescents who will benefit from group therapy, we offer many options.</p>
+            <div class="d-block">
+              <a href="/therapy/group/" class="btn btn-link text-hover-info pl-2 pl-lg-0">
+                <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Group Therapy
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================
+———	STAFF SECTION
+===================================== -->
+<section class="pt-9 pb-2 py-md-10 bg-info" id="teachers" style="background-image: url(/assets/img/background/avator-bg.png);">
+  <div class="container">
+    <div class="section-title justify-content-center mb-2 mb-md-8 wow fadeInUp">
+      <span class="shape shape-left bg-danger"></span>
+      <h2 class="text-white">Meet Our Staff</h2>
+      <span class="shape shape-right bg-danger"></span>
+    </div>
+
+    <div class="team-slider owl-carousel owl-theme wow fadeInUp" dir="ltr">
+      <div class="card card-hover card-transparent shadow-none">
+        <div class="card-img-wrapper position-relative shadow-sm rounded-circle mx-auto">
+          <a href="/about/team/melinda-heller-nellos.html"><img class="card-img-top rounded-circle lazyestload" data-src="/assets/img/avator/avator-img1.jpg" src="/assets/img/avator/avator-img1.jpg" alt="Melinda Heller Nellos"/></a>
+          <div class="card-img-overlay text-center rounded-circle">
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <a class="font-size-20 font-weight-medium d-block" href="/about/team/melinda-heller-nellos.html">Melinda Heller Nellos</a>
+          <span class="text-white">Licensed Therapist</span>
+        </div>
+      </div>
+
+      <div class="card card-hover card-transparent shadow-none">
+        <div class="card-img-wrapper position-relative shadow-sm rounded-circle mx-auto">
+          <img class="card-img-top rounded-circle lazyestload" data-src="/assets/img/avator/avator-img2.jpg" src="/assets/img/avator/avator-img2.jpg" alt="Lynne Cordova"/>
+          <div class="card-img-overlay text-center rounded-circle">
+          </div>
+        </div>
+        <div class="card-body position-relative text-center pb-0">
+          <a class="font-size-20 font-weight-medium d-block" href="/about/team/lynne-cordova.html">Lynne Cordova</a>
+          <span class="text-white">Licensed Therapist</span>
+        </div>
+      </div>
+
+      <div class="card card-hover card-transparent shadow-none">
+        <div class="card-img-wrapper position-relative shadow-sm rounded-circle mx-auto">
+          <img class="card-img-top rounded-circle lazyestload" data-src="/assets/img/avator/avator-img3.jpg" src="/assets/img/avator/avator-img3.jpg" alt="Tiffany Atencio"/>
+          <div class="card-img-overlay text-center rounded-circle">
+          </div>
+        </div>
+        <div class="card-body position-relative text-center pb-0">
+          <a class="font-size-20 font-weight-medium d-block" href="/about/team/tiffany-atencio.html">Tiffany Atencio</a>
+          <span class="text-white">Licensed Therapist</span>
+        </div>
+      </div>
+
+      <div class="card card-hover card-transparent shadow-none">
+        <div class="card-img-wrapper position-relative shadow-sm rounded-circle mx-auto">
+          <img class="card-img-top rounded-circle lazyestload" data-src="/assets/img/avator/avator-img4.jpg" src="/assets/img/avator/avator-img4.jpg" alt="Alison C’De Baca"/>
+          <div class="card-img-overlay text-center rounded-circle">
+          </div>
+        </div>
+        <div class="card-body position-relative text-center pb-0">
+          <a class="font-size-20 font-weight-medium d-block" href="/about/team/alison-c-de-baca.html">Alison C’De Baca</a>
+          <span class="text-white">Licensed Therapist</span>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+</div> <!-- element wrapper ends -->
