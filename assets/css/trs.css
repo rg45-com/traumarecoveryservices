@@ -16352,19 +16352,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   right: 1px;
 }
 
-/* Lazy Load Image */
-img {
-  transition: -webkit-filter 0.3s;
-  transition: filter 0.3s;
-  transition: filter 0.3s, -webkit-filter 0.3s;
-}
-
-img.lazyestload {
-  width: 100%;
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
-}
-
 /* Modal Small */
 .modal-sm .modal-content {
   border-radius: 0.625rem;
