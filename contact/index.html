@@ -1,0 +1,143 @@
+---
+layout: page
+title: Contact Us
+---
+<div class="main-wrapper teachers-details">
+
+  <!-- ====================================
+  ———	BREADCRUMB
+  ===================================== -->
+  <section class="breadcrumb-bg">
+    <div class="container">
+      <div class="breadcrumb-holder">
+        <div>
+          <h1 class="breadcrumb-title">{{ page.title }}</h1>
+          <ul class="breadcrumb breadcrumb-transparent">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item text-white active" aria-current="page">
+              {{ page.title }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-6 py-md-8">
+    <div class="container">
+      <div class="mb-9">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="media flex-md-column flex-lg-row mb-4">
+              <div class="icon-rounded-circle-large shadow-sm mb-md-2 mr-md-0 mr-2 mr-lg-2 bg-warning">
+                <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading text-warning mt-0 font-weight-bold mb-3">Address:</h3>
+                <p class="text-muted font-weight-medium">{{ site.address }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <div class="media flex-md-column flex-lg-row mb-6">
+              <div class="icon-rounded-circle-large shadow-sm mr-2 mb-md-2 mr-md-0 mr-lg-2 bg-success">
+                <i class="fa fa-phone text-white" aria-hidden="true"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading text-success mt-0 font-weight-bold mb-3">Phone:</h3>
+                <a class="text-muted font-weight-medium" href="tel:{{ site.phone }}">
+                  {{ site.phone }}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <div class="media flex-md-column flex-lg-row mb-3 mb-md-0">
+              <div class="icon-rounded-circle-large shadow-sm mr-2 mb-md-2 mr-md-0 mr-lg-2 bg-danger">
+                <i class="fa fa-envelope-o text-white" aria-hidden="true"></i>
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading text-danger">Email:</h3>
+                <p class="font-weight-medium">
+                  <a class="text-muted" href="mailto:{{ site.email }}">{{ site.email_display }}</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="mb-3">
+        Contact us to schedule an appointment using the information above or the form below.  
+      </p>
+    </div>
+
+  </section>
+
+  <section class="pb-10">
+    <div class="container">
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true"> 
+      <p class="d-none">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div class="form-group form-group-icon">
+            <i class="fa fa-user"></i>
+            <input type="text" class="form-control border-warning" placeholder="First name" required="">
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-xs-12">
+          <div class="form-group form-group-icon">
+            <i class="fa fa-envelope"></i>
+            <input type="email" class="form-control border-success" placeholder="Email address" required="">
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-xs-12">
+          <div class="form-group form-group-icon">
+            <i class="fa fa-phone"></i>
+            <input type="text" class="form-control border-purple" placeholder="Phone" required="">
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-xs-12">
+          <div class="form-group form-group-icon">
+            <i class="fa fa-book"></i>
+            <input type="text" class="form-control border-pink" placeholder="Subject" required="">
+          </div>
+        </div>
+  
+        <div class="col-12">
+          <div class="form-group form-group-icon">
+            <i class="fa fa-comments"></i>
+            <textarea class="form-control border-info" placeholder="Write message" rows="6"></textarea>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+        
+        <div class="col-12">
+          <div class="text-sm-center mt-6">
+            <button type="submit" class="btn btn-danger text-uppercase">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <div class="mb-10 mx-auto" id="map" style="width:100%; height:420px; mr-2 ml-2"><iframe sandbox="allow-scripts allow-same-origin allow-popups" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.125800782462!2d-106.5775837839712!3d35.1035694690408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220ad12fa4d587%3A0xdfb73e70debdb42b!2s6121+Indian+School+Rd+NE+%23235%2C+Albuquerque%2C+NM+87110!5e0!3m2!1sen!2sus!4v1558913414646!5m2!1sen!2sus" width="100%" height="480" frameborder="0"  scrolling="no"  margiheight="0" marginwidth="0" style="border:0" allowfullscreen></iframe></div>
+
+  
+
+</div>

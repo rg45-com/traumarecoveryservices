@@ -12507,9 +12507,8 @@ a:hover {
 
 /* Breadcrumb Background */
 .breadcrumb-bg {
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-image: url(/assets/img/background/footer-bg-img-1.png);
 }
 
 .breadcrumb-bg .breadcrumb-holder {
