@@ -10415,10 +10415,10 @@ button.bg-stone:focus {
   .p-md-10 {
     padding: 6.25rem !important;
   }
-  .pt-md-10,
+  /* .pt-md-10,
   .py-md-10 {
     padding-top: 6.25rem !important;
-  }
+  } */
   .pr-md-10,
   .px-md-10 {
     padding-right: 6.25rem !important;
