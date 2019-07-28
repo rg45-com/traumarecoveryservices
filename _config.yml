@@ -14,6 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #title: Trauma Recovery Services
+#description: >- 
+#  Trauma Recovery Services provides counseling and assessment to improve the mental health and well-being of children, adolescents and families. 
 email: info@traumarecoveryservices.org
 email_display: info@&#8203;traumarecoveryservices.org
 phone: "505-633-8001"
@@ -21,8 +23,6 @@ address: >-
   6121 Indian School Road<br/>
   Suite 235<br/>
   Albuquerque, NM 87110
-#description: >- 
-#  Trauma Recovery Services provides counseling and assessment to improve the mental health and well-being of children, adolescents and families. 
 url: "https://traumarecoveryservices.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_handle: TRS_TW
 instagram_handle: TRS_IN

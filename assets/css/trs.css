@@ -14643,6 +14643,13 @@ a:hover {
   padding: 1.25rem;
 }
 
+@media (min-width: 574px) and (max-width: 767px) {
+  .media-avator-view .media-body {
+    min-width: 50%;
+    padding: 0 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .media-list-view .media-body {
     padding: 0 1.4rem;
