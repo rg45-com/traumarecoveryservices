@@ -13,7 +13,7 @@
     /* basic navigation arrows and bullets */
     navigation: {
       arrows: {
-      enable: true,
+      enable: false,
       style: 'hesperiden',
       hide_onleave: false
       },
