@@ -19,6 +19,7 @@
 email: info@traumarecoveryservices.org
 email_display: info@&#8203;traumarecoveryservices.org
 phone: "505-633-8001"
+fax: "505-884-0222"
 address: >-
   6121 Indian School Road<br/>
   Suite 235<br/>
@@ -27,7 +28,7 @@ url: "https://traumarecoveryservices.netlify.com" # the base hostname & protocol
 twitter_handle: TRS_TW
 instagram_handle: TRS_IN
 facebook_handle: TRS_FB
-# google_analytics: ""
+google_analytics: "UA-145104919-1"
 
 # Build settings
 markdown: kramdown

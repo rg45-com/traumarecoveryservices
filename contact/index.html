@@ -26,9 +26,14 @@ description: Contact Trauma Recovery Services to schedule an appointment today.
     </div>
   </section>
 
-  <section class="py-6 py-md-8">
+  <section class="py-6 py-md-6">
     <div class="container">
-      <div class="mb-9">
+      <div class="mb-6">
+      <p class="font-size-24">
+        Contact us to schedule an appointment using the information or form below.  
+      </p>
+      </div>
+      <div class="mb-1">
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="media flex-md-column flex-lg-row mb-4">
@@ -37,7 +42,8 @@ description: Contact Trauma Recovery Services to schedule an appointment today.
               </div>
               <div class="media-body">
                 <h3 class="media-heading text-warning mt-0 font-weight-bold mb-3">Address:</h3>
-                <p class="text-muted font-weight-medium">{{ site.address }}</p>
+                <p class="text-muted font-weight-medium">{{ site.address }}<br/>
+                <a class="text-muted font-weight-medium" href="#map"><em>(see map below)</em></a></p>
               </div>
             </div>
           </div>
@@ -48,10 +54,13 @@ description: Contact Trauma Recovery Services to schedule an appointment today.
                 <i class="fa fa-phone text-white" aria-hidden="true"></i>
               </div>
               <div class="media-body">
-                <h3 class="media-heading text-success mt-0 font-weight-bold mb-3">Phone:</h3>
+                <h3 class="media-heading text-success mt-0 font-weight-bold mb-3">Phone / Fax</h3>
                 <a class="text-muted font-weight-medium" href="tel:{{ site.phone }}">
-                  {{ site.phone }}
+                  T: {{ site.phone }}
                 </a>
+                <p class="text-muted font-weight-medium pt-1">
+                  F: {{ site.fax }}
+                </p>
               </div>
             </div>
           </div>
@@ -72,14 +81,11 @@ description: Contact Trauma Recovery Services to schedule an appointment today.
         </div>
       </div>
 
-      <p class="mb-3 font-size-24">
-        Contact us to schedule an appointment using the information above or the form below.  
-      </p>
     </div>
 
   </section>
 
-  <section class="pb-10">
+  <section class="mb-6">
     <div class="container">
     <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true"> 
       <p class="d-none">
@@ -137,6 +143,7 @@ description: Contact Trauma Recovery Services to schedule an appointment today.
     </form>
   </section>
 
+  <a name="map"></a>
   <div class="mb-10 mx-auto" id="map" style="width:100%; height:420px; mr-2 ml-2"><iframe sandbox="allow-scripts allow-same-origin allow-popups" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.125800782462!2d-106.5775837839712!3d35.1035694690408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220ad12fa4d587%3A0xdfb73e70debdb42b!2s6121+Indian+School+Rd+NE+%23235%2C+Albuquerque%2C+NM+87110!5e0!3m2!1sen!2sus!4v1558913414646!5m2!1sen!2sus" width="100%" height="480" frameborder="0"  scrolling="no"  margiheight="0" marginwidth="0" style="border:0" allowfullscreen></iframe></div>
 
   
