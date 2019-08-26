@@ -51,3 +51,7 @@ exclude:
   - .git/
   - README.md
   - .DS_Store
+
+# Include into processing.
+include: 
+  - _redirects
