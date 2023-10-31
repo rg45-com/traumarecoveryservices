@@ -2,3 +2,5 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://traumarecoveryservices.netlify.com/* https://www.traumarecoveryservices.org/:splat 301!
+/about/team/alison-c-de-baca.html /about/team/ 301!
+/about/team/corey-nellos.html /about/team/ 301!
